@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson8Game</string>
+    <string name="about">
+        Создатель: Матякупов Зафар \n
+        @mail:     zafar.matyakupov@yandex.com
+    </string>
+</resources>
