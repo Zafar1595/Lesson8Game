@@ -17,6 +17,7 @@ class GameActivity : AppCompatActivity() {
     var secondNumber: Int = 0
     private var tuwri: Int = 0
     private var qate: Int = 0
+    val INTENT_KEY = "result"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
@@ -35,8 +36,12 @@ class GameActivity : AppCompatActivity() {
 
         if(tuwri + qate == 10){
             var intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("result", "Правилные: $tuwri \nНеправильные: $qate")
-            finish()
+            if(tuwri == 10){
+                intent.putExtra(INTENT_KEY, "Пздравляем ваш результат 10 из 10")
+            }else {
+                intent.putExtra(INTENT_KEY, "Правилные: $tuwri \nНеправильные: $qate")
+            }
+                finish()
             startActivity(intent)
         }else{ playGame() }
     }
