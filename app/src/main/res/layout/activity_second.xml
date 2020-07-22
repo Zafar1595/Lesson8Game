@@ -9,19 +9,21 @@
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:textSize="36sp"
         android:textColor="#000000"/>
     <Button
         android:id="@+id/buttonRestart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Заново"
+        android:text="Меню"
         android:textSize="32sp"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
